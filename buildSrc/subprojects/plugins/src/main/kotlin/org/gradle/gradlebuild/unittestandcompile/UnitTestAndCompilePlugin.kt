@@ -18,6 +18,7 @@ package org.gradle.gradlebuild.unittestandcompile
 import accessors.base
 import accessors.java
 import buildJvms
+import com.gradle.enterprise.gradleplugin.testdistribution.TestDistributionPlugin
 import libraries
 import library
 import maxParallelForks
@@ -73,6 +74,7 @@ class UnitTestAndCompilePlugin : Plugin<Project> {
         apply(plugin = "groovy")
         plugins.apply(AvailableJavaInstallationsPlugin::class.java)
         plugins.apply(TestRetryPlugin::class.java)
+        plugins.apply(TestDistributionPlugin::class.java)
 
         val extension = extensions.create<UnitTestAndCompileExtension>("gradlebuildJava", this)
 
@@ -276,6 +278,9 @@ class UnitTestAndCompilePlugin : Plugin<Project> {
                 retry {
                     maxRetries.set(1)
                     maxFailures.set(10)
+                }
+                distribution {
+                    enabled.set(true)
                 }
                 doFirst {
                     logger.lifecycle("maxParallelForks for '$path' is $maxParallelForks")
