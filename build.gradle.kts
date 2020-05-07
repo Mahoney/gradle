@@ -23,7 +23,7 @@ plugins {
     gradlebuild.cleanup                      // CI: Advanced cleanup after the build (like stopping daemons started by tests)
     gradlebuild.`ci-reporting`               // CI: Prepare reports to be uploaded to TeamCity
 
-    gradlebuild.buildscan                    // Reporting: Add more data through custom tags to build scans
+//    gradlebuild.buildscan                    // Reporting: Add more data through custom tags to build scans
 
     gradlebuild.`build-version`              // Release process: Set the version for this build
 
