@@ -274,7 +274,7 @@ class UnitTestAndCompilePlugin : Plugin<Project> {
             configureJvmForTest()
             addOsAsInputs()
 
-            if (BuildEnvironment.isCiServer && this !is PerformanceTest) {
+            if (this !is PerformanceTest) {
                 retry {
                     maxRetries.set(1)
                     maxFailures.set(10)
