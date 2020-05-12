@@ -22,8 +22,10 @@ import org.gradle.performance.results.ResultsStore
 import org.gradle.performance.results.ScenarioBuildResultData
 import org.gradle.test.fixtures.file.TestNameTestDirectoryProvider
 import org.junit.Rule
+import spock.lang.Ignore
 import spock.lang.Subject
 
+@Ignore('Test require git directory')
 class DefaultPerformanceExecutionDataProviderTest extends ResultSpecification {
     @Rule
     TestNameTestDirectoryProvider tmpDir = new TestNameTestDirectoryProvider(getClass())

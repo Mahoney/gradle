@@ -18,8 +18,10 @@ package org.gradle.performance.results
 
 import org.gradle.performance.ResultSpecification
 import org.gradle.performance.results.report.FlakinessScenarioPageGenerator
+import spock.lang.Ignore
 import spock.lang.Subject
 
+@Ignore('Test require git directory')
 class FlakinessScenarioPageGeneratorTest extends ResultSpecification {
     @Subject
     FlakinessScenarioPageGenerator generator = new FlakinessScenarioPageGenerator()
