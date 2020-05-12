@@ -281,7 +281,7 @@ class UnitTestAndCompilePlugin : Plugin<Project> {
                 }
                 distribution {
                     enabled.set(true)
-                    maxLocalExecutors.set(8)
+                    maxLocalExecutors.set(0)
                     maxRemoteExecutors.set(8)
                 }
                 doFirst {
