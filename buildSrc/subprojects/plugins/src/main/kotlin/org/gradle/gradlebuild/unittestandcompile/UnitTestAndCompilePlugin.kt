@@ -280,9 +280,8 @@ class UnitTestAndCompilePlugin : Plugin<Project> {
                     maxFailures.set(10)
                 }
                 distribution {
-                    enabled.set(true)
                     maxLocalExecutors.set(0)
-                    maxRemoteExecutors.set(5)
+                    enabled.set(true)
                 }
                 doFirst {
                     logger.lifecycle("maxParallelForks for '$path' is $maxParallelForks")

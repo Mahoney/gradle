@@ -20,11 +20,13 @@ import org.gradle.integtests.fixtures.AbstractIntegrationSpec
 import org.gradle.integtests.fixtures.ToBeFixedForInstantExecution
 import org.gradle.test.fixtures.file.TestFile
 import org.gradle.util.TestPrecondition
+import spock.lang.Ignore
 import spock.lang.Unroll
 
 import static org.gradle.integtests.fixtures.RepoScriptBlockUtil.gradlePluginRepositoryDefinition
 import static org.gradle.integtests.fixtures.RepoScriptBlockUtil.jcenterRepository
 
+@Ignore
 class IsolatedAntBuilderMemoryLeakIntegrationTest extends AbstractIntegrationSpec {
 
     private void goodCode(String groovyVersion, TestFile root = testDirectory) {
