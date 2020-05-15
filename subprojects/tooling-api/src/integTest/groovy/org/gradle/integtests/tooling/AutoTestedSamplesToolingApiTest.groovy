@@ -20,9 +20,11 @@ import org.gradle.integtests.fixtures.AutoTestedSamplesUtil
 import org.gradle.internal.classloader.ClasspathUtil
 import org.gradle.test.fixtures.file.TestNameTestDirectoryProvider
 import org.gradle.tooling.model.Element
+import org.junit.Ignore
 import org.junit.Rule
 import spock.lang.Specification
 
+@Ignore
 public class AutoTestedSamplesToolingApiTest extends Specification {
 
     @Rule public final TestNameTestDirectoryProvider temp = new TestNameTestDirectoryProvider(getClass())

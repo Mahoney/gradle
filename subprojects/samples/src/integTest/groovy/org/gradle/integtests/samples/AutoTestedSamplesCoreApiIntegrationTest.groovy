@@ -17,8 +17,10 @@
 package org.gradle.integtests.samples
 
 import org.gradle.integtests.fixtures.AbstractAutoTestedSamplesTest
+import org.junit.Ignore
 import org.junit.Test
 
+@Ignore
 class AutoTestedSamplesCoreApiIntegrationTest extends AbstractAutoTestedSamplesTest {
 
     @Test

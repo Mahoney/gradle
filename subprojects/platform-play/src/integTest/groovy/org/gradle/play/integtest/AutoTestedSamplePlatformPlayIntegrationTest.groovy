@@ -17,8 +17,10 @@
 package org.gradle.play.integtest
 
 import org.gradle.integtests.fixtures.AbstractAutoTestedSamplesTest
+import org.junit.Ignore
 import org.junit.Test
 
+@Ignore
 class AutoTestedSamplePlatformPlayIntegrationTest extends AbstractAutoTestedSamplesTest {
     @Test
     void runSamples() {
