@@ -18,9 +18,7 @@ package org.gradle.ide
 
 import org.gradle.integtests.fixtures.AbstractAutoTestedSamplesTest
 import org.junit.Test
-import org.junit.Ignore
 
-@Ignore
 class AutoTestedSamplesIdeNativeIntegrationTest extends AbstractAutoTestedSamplesTest{
 
     @Test
