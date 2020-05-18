@@ -17,10 +17,8 @@
 package org.gradle.plugins.signing
 
 import org.gradle.integtests.fixtures.AbstractAutoTestedSamplesTest
-import org.junit.Ignore
 import org.junit.Test
 
-@Ignore
 class AutoTestedSamplesSigningIntegrationTest extends AbstractAutoTestedSamplesTest {
     @Test
     void runSamples() {

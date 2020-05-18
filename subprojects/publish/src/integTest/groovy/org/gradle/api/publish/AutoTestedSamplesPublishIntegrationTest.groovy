@@ -17,10 +17,8 @@
 package org.gradle.api.publish
 
 import org.gradle.integtests.fixtures.AbstractAutoTestedSamplesTest
-import org.junit.Ignore
 import org.junit.Test
 
-@Ignore
 class AutoTestedSamplesPublishIntegrationTest extends AbstractAutoTestedSamplesTest{
 
     @Test
